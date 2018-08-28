@@ -1,0 +1,46 @@
+<TelaPrincipal@FloatLayout>:
+   canvas.before:
+      Rectangle:
+         pos: self.pos
+         size: self.size
+         source: 'background.jpg'
+
+   Label:
+      id: 1
+      text: "Bem Vindo ao App da GDM!"
+      font_size: '50dp'
+      pos_hint: {'center_x': .5, 'center_y': .5}
+      color: 0,0, 300, 1
+   Button:
+      id: 2
+      text: "Clique aqui para prosseguir"
+      size_hint: (.3, .1)
+      pos_hint: {'center_x': .5, 'center_y': .4}
+      on_press: root.click()
+
+<Tela2@FloatLayout>:
+   canvas.before:
+      Rectangle:
+         pos: self.pos
+         size: self.size
+         source: 'background.jpg'
+   Label:
+      id: 3
+      text: "Membros Principais: "
+      size_hint: (.3, .1)
+      pos_hint: {'center_x': .5, 'y': .9}
+   Label:
+      id: 4
+      text: "Joao Vitor"
+      font_size: sp(16)
+      size_hint: (.3, .1)
+      pos_hint: {'center_x': .25, 'top': .82}
+      markup: True
+   Image:
+      id: 5
+      source: 'jv.jpg'
+      size_hint: (.2, .2)
+      pos_hint: {'x': .0, 'top': .8}
+
+
+TelaPrincipal:
